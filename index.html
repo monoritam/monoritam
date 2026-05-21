@@ -6,11 +6,45 @@
 -->
 <html>
 	<head>
-		<title>monoritam by HTML5 UP</title>
+		<title>Monoritam - Saša Ranković</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Uniformnost fontova i proreda na celom sajtu */
+			#wrapper p, 
+			#wrapper .inner p, 
+			#wrapper header p, 
+			.wrapper .inner p,
+			.features p {
+				font-size: 1.1rem !important;
+				line-height: 1.6 !important;
+				font-weight: normal !important;
+				text-transform: none !important;
+				margin-bottom: 1.2em !important;
+				letter-spacing: normal !important;
+			}
+			
+			/* Stil za responsive video unutar grida */
+			.video-grid-container {
+				overflow: hidden;
+				padding-bottom: 56.25%;
+				position: relative;
+				height: 0;
+				margin-bottom: 1.5em;
+				border-radius: 4px;
+				box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+			}
+			.video-grid-container iframe {
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				border: 0;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -31,10 +65,9 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>
+								<li><a href="muzicari-iz-masine.html">Muzičari iz mašine</a></li>
+								<li><a href="studio.html">Studio</a></li>
+								<li><a href="diskografija.html">Diskografija</a></li>
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
@@ -45,7 +78,7 @@
 						<div class="inner">
 							<div class="logo"><span class="icon fa-gem"></span></div>
 							<h2>monoritam</h2>
-							<p>Saša Ranković  je muzičar i filozof, prisutan na muzičkoj sceni kao bubnjar (Rambo Amadeus) i kao autor (Go ali soko, TSP, Monoritam...)</p>
+							<p>Saša Ranković je muzičar i filozof, prisutan na muzičkoj sceni kao bubnjar (Rambo Amadeus) i kao autor (Go ali soko, TSP, Monoritam...)</p>
 						</div>
 					</section>
 
@@ -55,9 +88,9 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+									<a href="muzicari-iz-masine.html" class="image"><img src="images/pic01.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Bubnjevi i muzičari iz mašine</h2>
+										<h2 class="major" style="text-transform: none;">Muzičari iz mašine</h2>
 										<p>Ovaj koncept daje bubnjaru slobodu da svira onako kako oseća a da njegovi ritmovi, naglasci i fraze budu ispraćeni reakcijama virtuelnog basiste, pijaniste, saksofoniste - čitavog virtuelnog orkestra. Rezultat je jedinstveni i neponovljivi muzički doživljaj, stvoren spontano i nepredvidivo, baš kao što se to događa kod sviranja sa živim muzičarima.</p>
 										<a href="muzicari-iz-masine.html" class="special">Saznaj više...</a>
 									</div>
@@ -67,11 +100,11 @@
 						<!-- Two -->
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="studio.html" class="image"><img src="images/pic02.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Studio</h2>
+										<h2 class="major" style="text-transform: none;">Studio</h2>
 										<p>Časovi bubnjeva, snimanje bubnjeva, studijske usluge.</p>
-										<a href="#" class="special">Learn more</a>
+										<a href="studio.html" class="special">Saznaj više...</a>
 									</div>
 								</div>
 							</section>
@@ -79,11 +112,11 @@
 						<!-- Three -->
 							<section id="three" class="wrapper spotlight style3">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									<a href="diskografija.html" class="image"><img src="images/pic03.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Diskografija</h2>
+										<h2 class="major" style="text-transform: none;">Diskografija</h2>
 										<p>Poslušajte muziku ili naručite originalna CD izdanja.</p>
-										<a href="#" class="special">Learn more</a>
+										<a href="diskografija.html" class="special">Pogledaj izdanja</a>
 									</div>
 								</div>
 							</section>
@@ -91,51 +124,73 @@
 						<!-- Four -->
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
-									<h2 class="major">Vitae phasellus</h2>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+									<h2 class="major" style="text-transform: none;">Projekti i Video Snimci</h2>
 									<section class="features">
+										
+										<!-- 1. RAMBO AMADEUS -->
 										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<div class="video-grid-container">
+												<iframe src="https://www.youtube.com/embed/RAMBO_VIDEO_KOD" allowfullscreen></iframe>
+											</div>
+											<h3 class="major" style="text-transform: none;">Rambo Amadeus</h3>
+											<p>Živa izvođenja i nastupi na festivalima širom regiona. Energičan spoj improvizacije, džeza i prepoznatljivog zvuka.</p>
 										</article>
+
+										<!-- 2. GO ALI SOKO -->
 										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<div class="video-grid-container">
+												<iframe src="https://www.youtube.com/embed/SOKO_VIDEO_KOD" allowfullscreen></iframe>
+											</div>
+											<h3 class="major" style="text-transform: none;">Go Ali Soko</h3>
+											<p>Snimci i izvođenja u okviru ovog specifičnog audio-vizuelnog i muzičkog koncepta.</p>
 										</article>
+
+										<!-- 3. TSP TRIO -->
 										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">Ante fermentum</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<div class="video-grid-container">
+												<iframe src="https://www.youtube.com/embed/TSP_VIDEO_KOD" allowfullscreen></iframe>
+											</div>
+											<h3 class="major" style="text-transform: none;">TSP Trio</h3>
+											<p>Istraživanje trio forme, ritmičkih struktura i zajedničke muzičke sinergije kroz živi sešn.</p>
 										</article>
+
+										<!-- 4. SOLO BUBNJEVI -->
 										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Fusce consequat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<div class="video-grid-container">
+												<iframe src="https://www.youtube.com/embed/SOLO_VIDEO_KOD" allowfullscreen></iframe>
+											</div>
+											<h3 class="major" style="text-transform: none;">Solo sviranje bubnjeva</h3>
+											<p>Autorski snimci, solo performansi i istraživanje zvuka sa mog zvaničnog YouTube kanala.</p>
 										</article>
+
 									</section>
-									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
-									</ul>
 								</div>
 							</section>
 
 					</section>
 
-				<<!-- Footer -->
-	<section id="footer">
-		<div class="inner">
-			<h2 class="major" style="text-transform: none;">Kontakt</h2>
-			<ul class="contact" style="margin: 0 0 2em 0; padding: 0;">
-				<li class="icon solid fa-envelope" style="list-style: none;"><a href="mailto:sasarankovic@gmail.com">sasarankovic@gmail.com</a></li>
-			</ul>
-			<ul class="copyright">
-				<li>&copy; Saša Ranković. Sva prava zadržana.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-			</ul>
-		</div>
-	</section>
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major" style="text-transform: none;">Kontakt</h2>
+							<ul class="contact" style="margin: 0 0 2em 0; padding: 0;">
+								<li class="icon solid fa-envelope" style="list-style: none;"><a href="mailto:sasarankovic@gmail.com">sasarankovic@gmail.com</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Saša Ranković. Sva prava zadržana.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
