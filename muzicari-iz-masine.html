@@ -11,6 +11,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Podešavanje da ceo tekst na stranici ima isti font i veličinu kao uvodni pasus */
+			#wrapper p, .wrapper .inner p {
+				font-size: 1.2rem !important;
+				line-height: 1.75 !important;
+				font-weight: normal !important;
+				text-transform: none !important;
+			}
+			/* Stil za sitniji i italik opis ispod slike na dnu */
+			.image-caption {
+				font-size: 0.95rem !important;
+				font-style: italic;
+				color: rgba(255, 255, 255, 0.6);
+				margin-top: 0.7em;
+				margin-bottom: 2em;
+				display: block;
+				text-align: left;
+				line-height: 1.5;
+			}
+			/* Razmak oko Bandcamp plejera i pratećeg teksta */
+			.bandcamp-section {
+				margin: 2em 0;
+			}
+			.bandcamp-section p {
+				margin-top: 0.8em !important;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -33,8 +60,6 @@
 								<li><a href="index.html">Home</a></li>
 								<li><a href="generic.html">Generic</a></li>
 								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
@@ -45,9 +70,15 @@
 						<header>
 							<div class="inner">
 								<h2 style="text-transform: none;">Inovativan spoj akustičnih bubnjeva i virtuelnih instrumenata</h2>
-								<p style="font-size: 1rem; text-transform: none; font-weight: normal; margin: 0 0 1em 0;"><strong>Zašto bubnjevi ne sviraju "tonove"?</strong></p>
-								<p style="font-size: 1rem; text-transform: none; font-weight: normal; margin: 0 0 1em 0;">Bubnjarska koža je cirkularna membrana. Nasuprot vibriranju žice ili vazdušnog stuba, koja su jednodimenzionalna, vibracija kružne membrane je dvodimenzionalna i mnogi modusi vibracije se pojavljuju istovremeno. Ovi obrasci vibriranja membrane potiskuju molekule vazduha stvarajući tako zvučne frekvencije koje čujemo.</p>
-								<p style="font-size: 1rem; text-transform: none; font-weight: normal; margin: 0 0 1em 0;">Ono što je specifično za zvučne membrane jeste to da ovi modusi nisu harmonični, što znači da frekvencije viših modusa nisu umnošci (proizvod osnovne frekvencije i celog broja) osnovne frekvencije kao što je slučaj kod harmonske serije. To znači da tonsku visinu bubnjeva nije lako odrediti, pa se bubnjevi koriste za ritam, a ne za gradnju melodija i harmonija. U našem slučaju, upravo ova čudna igra harmonika igraće ulogu u generisanju tonova za virtuelne instrumente.</p>
+								<p><strong>Zašto bubnjevi ne sviraju "tonove"?</strong></p>
+								<p>Bubnjarska koža je cirkularna membrana. Nasuprot vibriranju žice ili vazdušnog stuba, koja su jednodimenzionalna, vibracija kružne membrane je dvodimenzionalna i mnogi modusi vibracije se pojavljuju istovremeno. Ovi obrasci vibriranja membrane potiskuju molekule vazduha stvarajući tako zvučne frekvencije koje čujemo.</p>
+								<p>Ono što je specifično za zvučne membrane jeste to da ovi modusi nisu harmonični, što znači da frekvencije viših modusa nisu umnošci (proizvod osnovne frekvencije i celog broja) osnovne frekvencije kao što je slučaj kod harmonske serije. To znači da tonsku visinu bubnjeva nije lako odrediti, pa se bubnjevi koriste za ritam, a ne za gradnju melodija i harmonija. U našem slučaju, upravo ova čudna igra harmonika igraće ulogu u generisanju tonova za virtuelne instrumente.</p>
+								
+								<!-- BANDCAMP SEKCIJA -->
+								<div class="bandcamp-section">
+									<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1785476707/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://sasarankovic.bandcamp.com/album/monoritam-drum-out">MONORITAM - Drum Out by Saša Ranković</a></iframe>
+									<p>Ovo su audio snimci ovako nastalih komada. Sve je snimljeno uživo - bez nasnimavanja, matrica, lupova, semplova i sl.</p>
+								</div>
 							</div>
 						</header>
 
@@ -68,6 +99,12 @@
 									<p>U ovako koncipiranom procesu pretvaranja audio signala akustičnih bubnjeva u MIDI signal postoji momenat slučaja, zbog neizvesnosti oko toga šta će štimer uhvatiti od zvuka koji bubnjevi proizvode. (Ovo je posledica gore pomenute neharmoničnosti modusa vibracije bubnjarske membrane).</p>
 									<p>To znači da bubnjar ne zna šta će ostali instrumenti odsvirati - mora da sluša, prati i sledi razvoj muzičkog događanja baš poput situacije improvizovanja sa živim muzičarima.</p>
 									<p>Promena u sviranju bubnjara je detektovana štimerom i odražava se na to šta instrumenti sviraju i tako u krug - napravljena je povratna sprega izmedju bubnjara i virtuelnih instrumenata sa računara.</p>
+
+									<!-- SLIKA SA OPISOM NA KRAJU TEKSTA (PRE KONTAKTA) -->
+									<div class="image main" style="margin-top: 3em; margin-bottom: 0;">
+										<img src="images/Kraljevo.jpg" alt="Saša Ranković - Muzički performans" />
+										<span class="image-caption">U sklopu izložbe naučnih ilustracija „Iza objektivnosti: vizuelne metafore u nauci“, koju je, od 15. maja do 12. juna 2023, Centar za promociju nauke (CPN) organizovao u saradnji sa Narodnim muzejom Kraljevo, Saša Ranković izveo je muzički performans „Bubnjar i muzičari iz mašine“</span>
+									</div>
 
 								</div>
 							</div>
