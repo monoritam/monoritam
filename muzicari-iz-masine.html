@@ -46,8 +46,8 @@
 							<div class="inner">
 								<h2>Inovativan spoj akustičnih bubnjeva i virtuelnih instrumenata</h2>
 								<p><strong>Zašto bubnjevi ne sviraju "tonove"?</strong></p>
-								<p>Bubnjarska koža je cirkularna membrana. Nasuprot vibriranju žice ili vazdušnog stuba, koja su jednodimenzionalna, vibracija kružne membrane je dvodimenzionalna i mnogi modusi vibracije se pojavljuju istovremeno. Ovi obrasci vibriranja membrane potiskuju molekule vazduha stvarajući tako zvučne frekvencije koje čujemo.</p>
-								<p>Ono što je specifično za zvučne membrane jeste to da ovi modusi nisu harmonični, što znači da frekvencije viših modusa nisu umnošci (proizvod osnovne frekvencije i celog broja) osnovne frekvencije kao što je slučaj kod harmonske serije. To znači da tonsku visinu bubnjeva nije lako odrediti, pa se bubnjevi koriste za ritam, a ne za gradnju melodija i harmonija. U našem slučaju, upravo ova čudna igra harmonika igraće ulogu u generisanju tonova za virtuelne instrumente.</p>
+								<p style="text-transform: none;">Bubnjarska koža je cirkularna membrana. Nasuprot vibriranju žice ili vazdušnog stuba, koja su jednodimenzionalna, vibracija kružne membrane je dvodimenzionalna i mnogi modusi vibracije se pojavljuju istovremeno. Ovi obrasci vibriranja membrane potiskuju molekule vazduha stvarajući tako zvučne frekvencije koje čujemo.</p>
+								<p style="text-transform: none;">Ono što je specifično za zvučne membrane jeste to da ovi modusi nisu harmonični, što znači da frekvencije viših modusa nisu umnošci (proizvod osnovne frekvencije i celog broja) osnovne frekvencije kao što je slučaj kod harmonske serije. To znači da tonsku visinu bubnjeva nije lako odrediti, pa se bubnjevi koriste za ritam, a ne za gradnju melodija i harmonija. U našem slučaju, upravo ova čudna igra harmonika igraće ulogu u generisanju tonova za virtuelne instrumente.</p>
 							</div>
 						</header>
 
@@ -55,16 +55,16 @@
 							<div class="wrapper">
 								<div class="inner">
 
-									<h3 class="major">Od šuma do tona</h3>
+									<h3 class="major" style="text-transform: none;">Od šuma do tona</h3>
 									<p>Ideja koja stoji iza ovog načina proizvodjenja muzike je sledeća: šum koji bubnjevi proizvode nije samo odsutnost tonova, već zapravo prisutnost mnogih frekvencija odjednom. Naša ideja je da iz obilja frekvencija koje bubnjevi proizvode izdvojimo tonove i prenesemo ih ostalim instrumentima kako bi stvorili celovitu melodijsko-harmonsku strukturu.</p>
 
-									<h3 class="major">Audio-to-MIDI</h3>
+									<h3 class="major" style="text-transform: none;">Audio-to-MIDI</h3>
 									<p>Za tu namenu koristimo mikrofon koji audio signal prenosi u štimer (tjuner) koji ima MIDI output tj. može informaciju o ustanovljenoj frekvenciji da prosledi dalje MIDI protokolom. Štimer analizira osnovnu frekvenciju zvuka koji dolazi sa bubnjeva, pretvara je u MIDI signal i šalje ga dalje u VST instrumente poput klavira, kontrabasa, saksofona, gitare i sintisajzera koji su instalirani na računaru kao VST plaginovi. Njihov zvuk čujemo uporedo sa akustičnim bubnjevima - kao da slušamo bend uživo.</p>
 									
 									<p><strong>Štimer "greši" i mnogi se tonovi dese slučajno - bubnjar mora da "prati" ostale!<br />
 									Tonovi koje instrumenti sviraju generisani su bubnjevima ali nisu jednoznačno određeni kao što bi to bio slučaj sa upotrebom trigera, kod kojih udarac na bubnju pokreće tačno određeno dešavanje na virtuelnom instrumentu.</strong></p>
 									
-									<h3 class="major">U igru se uvodi "slučaj"</h3>
+									<h3 class="major" style="text-transform: none;">U igru se uvodi "slučaj"</h3>
 									<p>U ovako koncipiranom procesu pretvaranja audio signala akustičnih bubnjeva u MIDI signal postoji momenat slučaja, zbog neizvesnosti oko toga šta će štimer uhvatiti od zvuka koji bubnjevi proizvode. (Ovo je posledica gore pomenute neharmoničnosti modusa vibracije bubnjarske membrane).</p>
 									<p>To znači da bubnjar ne zna šta će ostali instrumenti odsvirati - mora da sluša, prati i sledi razvoj muzičkog događanja baš poput situacije improvizovanja sa živim muzičarima.</p>
 									<p>Promena u sviranju bubnjara je detektovana štimerom i odražava se na to šta instrumenti sviraju i tako u krug - napravljena je povratna sprega izmedju bubnjara i virtuelnih instrumenata sa računara.</p>
@@ -77,7 +77,7 @@
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<h2 class="major">Kontakt</h2>
+							<h2 class="major" style="text-transform: none;">Kontakt</h2>
 							<form method="post" action="#">
 								<div class="fields">
 									<div class="field">
@@ -98,11 +98,7 @@
 								</ul>
 							</form>
 							<ul class="contact">
-								<li class="icon solid fa-home">
-									Kragujevac<br />
-									Srbija
-								</li>
-								<li class="icon solid fa-envelope"><a href="#">tvoj-email@adresa.com</a></li>
+								<li class="icon solid fa-envelope"><a href="mailto:sasarankovic@gmail.com">sasarankovic@gmail.com</a></li>
 							</ul>
 							<ul class="copyright">
 								<li>&copy; Saša Ranković. Sva prava zadržana.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
