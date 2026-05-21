@@ -12,30 +12,53 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* Podešavanje da ceo tekst na stranici ima isti font i veličinu kao uvodni pasus */
-			#wrapper p, .wrapper .inner p {
+			/* Forsiranje potpuno identičnog fonta, veličine i razmaka za sve pasuse na stranici */
+			#wrapper p, 
+			#wrapper .inner p, 
+			#wrapper header p, 
+			.wrapper .inner p {
 				font-size: 1.2rem !important;
 				line-height: 1.75 !important;
 				font-weight: normal !important;
 				text-transform: none !important;
+				margin-bottom: 1.5em !important;
+				letter-spacing: normal !important;
 			}
-			/* Stil za sitniji i italik opis ispod slike na dnu */
-			.image-caption {
+			
+			/* Stil za sitniji i italik opis ispod elemenata (plejer i slika) */
+			.custom-caption {
 				font-size: 0.95rem !important;
-				font-style: italic;
-				color: rgba(255, 255, 255, 0.6);
-				margin-top: 0.7em;
-				margin-bottom: 2em;
+				font-style: italic !important;
+				color: rgba(255, 255, 255, 0.6) !important;
+				line-height: 1.5 !important;
+				margin-top: 0.7em !important;
+				margin-bottom: 2em !important;
 				display: block;
 				text-align: left;
-				line-height: 1.5;
 			}
-			/* Razmak oko Bandcamp plejera i pratećeg teksta */
+			
+			/* Razmak oko sekcija sa plejerima */
 			.bandcamp-section {
 				margin: 2em 0;
 			}
-			.bandcamp-section p {
-				margin-top: 0.8em !important;
+			.youtube-section {
+				margin: 3em 0 2em 0;
+			}
+			
+			/* Prilagođavanje YouTube plejera da bude responsive na svim ekranima */
+			.video-responsive {
+				overflow: hidden;
+				padding-bottom: 56.25%;
+				position: relative;
+				height: 0;
+			}
+			.video-responsive iframe {
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				border: 0;
 			}
 		</style>
 	</head>
@@ -77,7 +100,7 @@
 								<!-- BANDCAMP SEKCIJA -->
 								<div class="bandcamp-section">
 									<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1785476707/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://sasarankovic.bandcamp.com/album/monoritam-drum-out">MONORITAM - Drum Out by Saša Ranković</a></iframe>
-									<p>Ovo su audio snimci ovako nastalih komada. Sve je snimljeno uživo - bez nasnimavanja, matrica, lupova, semplova i sl.</p>
+									<span class="custom-caption">Ovo su audio snimci ovako nastalih komada. Sve je snimljeno uživo - bez nasnimavanja, matrica, lupova, semplova i sl.</span>
 								</div>
 							</div>
 						</header>
@@ -100,10 +123,17 @@
 									<p>To znači da bubnjar ne zna šta će ostali instrumenti odsvirati - mora da sluša, prati i sledi razvoj muzičkog događanja baš poput situacije improvizovanja sa živim muzičarima.</p>
 									<p>Promena u sviranju bubnjara je detektovana štimerom i odražava se na to šta instrumenti sviraju i tako u krug - napravljena je povratna sprega izmedju bubnjara i virtuelnih instrumenata sa računara.</p>
 
-									<!-- SLIKA SA OPISOM NA KRAJU TEKSTA (PRE KONTAKTA) -->
+									<!-- SLIKA SA OPISOM -->
 									<div class="image main" style="margin-top: 3em; margin-bottom: 0;">
 										<img src="images/Kraljevo.jpg" alt="Saša Ranković - Muzički performans" />
-										<span class="image-caption">U sklopu izložbe naučnih ilustracija „Iza objektivnosti: vizuelne metafore u nauci“, koju je, od 15. maja do 12. juna 2023, Centar za promociju nauke (CPN) organizovao u saradnji sa Narodnim muzejom Kraljevo, Saša Ranković izveo je muzički performans „Bubnjar i muzičari iz mašine“</span>
+										<span class="custom-caption">U sklopu izložbe naučnih ilustracija „Iza objektivnosti: vizuelne metafore u nauci“, koju je, od 15. maja do 12. juna 2023, Centar za promociju nauke (CPN) organizovao u saradnji sa Narodnim muzejom Kraljevo, Saša Ranković izveo je muzički performans „Bubnjar i muzičari iz mašine“</span>
+									</div>
+
+									<!-- YOUTUBE PLAYLIST EMBED -->
+									<div class="youtube-section">
+										<div class="video-responsive">
+											<iframe src="https://www.youtube.com/embed/videoseries?list=PLlaw_pXGDpD7nv3CVXEK0FemzQZRMJcj8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</div>
 									</div>
 
 								</div>
