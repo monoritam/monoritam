@@ -4154,24 +4154,3 @@ input, select, textarea {
 		}
 
 	}
-/* --- PROMENA BOJA ZA MONORITAM --- */
-
-/* Zelena za primarne elemente (zamena za plavu) */
-.wrapper.spotlight.style1, .wrapper.spotlight.style2, .wrapper.spotlight.style3 {
-    background-color: #4A6741;
-}
-
-/* Bordo za antracit delove (footer i header) */
-#page-wrapper > #header, #page-wrapper > #footer {
-    background-color: #7D3C3C;
-}
-
-/* Dugmići i aktivni elementi u zeleno */
-.button, .button:hover {
-    background-color: #4A6741 !important;
-}
-
-/* Hover efekti da ostanu suptilni */
-a:hover {
-    color: #7D3C3C !important;
-}
