@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Muzičari iz mašine - Saša Ranković</title>
@@ -12,7 +7,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* Potpuna uniformnost: ista veličina, prored i razmak za sve pasuse na sajtu */
 			#wrapper p, 
 			#wrapper .inner p, 
 			#wrapper header p, 
@@ -25,7 +19,6 @@
 				letter-spacing: normal !important;
 			}
 			
-			/* Stil za opis ispod plejera i slike (sitniji, diskretniji i italik) */
 			.custom-caption {
 				font-size: 0.9rem !important;
 				font-style: italic !important;
@@ -37,15 +30,22 @@
 				text-align: left;
 			}
 			
-			/* Kontrola razmaka oko multimedije */
-			.bandcamp-section {
-				margin: 1.8em 0;
-			}
-			.youtube-section {
-				margin: 2.5em 0 1.5em 0;
-			}
+			.bandcamp-section { margin: 1.8em 0; }
+			.youtube-section { margin: 2.5em 0 1.5em 0; }
 			
-			/* Prilagođavanje YouTube plejera za mobilne telefone */
+			/* FIX ZA SLIKU: Osigurava da se smanji na mobilnom */
+			.image.main {
+				display: block;
+				margin: 2em 0 !important;
+				max-width: 100% !important;
+			}
+			.image.main img {
+				width: 100% !important;
+				height: auto !important;
+				display: block;
+				border-radius: 5px;
+			}
+
 			.video-responsive {
 				overflow: hidden;
 				padding-bottom: 56.25%;
@@ -64,105 +64,82 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+		<div id="page-wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">monoritam</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+			<header id="header">
+				<h1><a href="index.html">monoritam</a></h1>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
+			<nav id="menu">
+				<div class="inner">
+					<h2>Menu</h2>
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html">Generic</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+					<a href="#" class="close">Close</a>
+				</div>
+			</nav>
+
+			<section id="wrapper">
+				<header>
+					<div class="inner">
+						<div class="bandcamp-section">
+							<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1785476707/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://sasarankovic.bandcamp.com/album/monoritam-drum-out">MONORITAM - Drum Out by Saša Ranković</a></iframe>
+							<span class="custom-caption">Ovo su audio snimci ovako nastalih komada. Sve je snimljeno uživo - bez nasnimavanja, matrica, lupova, semplova i sl.</span>
 						</div>
-					</nav>
 
-				<!-- Wrapper -->
-					<section id="wrapper">
-						<header>
-							<div class="inner">
-								<h2 style="text-transform: none;">Inovativan spoj akustičnih bubnjeva i virtuelnih instrumenata</h2>
-								<p><strong>Zašto bubnjevi ne sviraju "tonove"?</strong></p>
-								<p>Bubnjarska koža je cirkularna membrana. Nasuprot vibriranju žice ili vazdušnog stuba, koja su jednodimenzionalna, vibracija kružne membrane je dvodimenzionalna i mnogi modusi vibracije se pojavljuju istovremeno. Ovi obrasci vibriranja membrane potiskuju molekule vazduha stvarajući tako zvučne frekvencije koje čujemo.</p>
-								<p>Ono što je specifično za zvučne membrane jeste to da ovi modusi nisu harmonični, što znači da frekvencije viših modusa nisu umnošci (proizvod osnovne frekvencije i celog broja) osnovne frekvencije kao što je slučaj kod harmonske serije. To znači da tonsku visinu bubnjeva nije lako odrediti, pa se bubnjevi koriste za ritam, a ne za gradnju melodija i harmonija. U našem slučaju, upravo ova čudna igra harmonika igraće ulogu u generisanju tonova za virtuelne instrumente.</p>
-								
-								<!-- BANDCAMP SEKCIJA -->
-								<div class="bandcamp-section">
-									<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1785476707/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://sasarankovic.bandcamp.com/album/monoritam-drum-out">MONORITAM - Drum Out by Saša Ranković</a></iframe>
-									<span class="custom-caption">Ovo su audio snimci ovako nastalih komada. Sve je snimljeno uživo - bez nasnimavanja, matrica, lupova, semplova i sl.</span>
-								</div>
-							</div>
-						</header>
+						<p><strong>Zašto bubnjevi ne sviraju "tonove"?</strong></p>
+						<p>Bubnjarska koža je cirkularna membrana. Nasuprot vibriranju žice ili vazdušnog stuba, koja su jednodimenzionalna, vibracija kružne membrane je dvodimenzionalna i mnogi modusi vibracije se pojavljuju istovremeno. Ovi obrasci vibriranja membrane potiskuju molekule vazduha stvarajući tako zvučne frekvencije koje čujemo.</p>
+						<p>Ono što je specifično za zvučne membrane jeste to da ovi modusi nisu harmonični, što znači da frekvencije viših modusa nisu umnošci (proizvod osnovne frekvencije i celog broja) osnovne frekvencije kao što je slučaj kod harmonske serije. To znači da tonsku visinu bubnjeva nije lako odrediti, pa se bubnjevi koriste za ritam, a ne za gradnju melodija i harmonija. U našem slučaju, upravo ova čudna igra harmonika igraće ulogu u generisanju tonova za virtuelne instrumente.</p>
+					</div>
+				</header>
 
-						<!-- Content -->
-							<div class="wrapper">
-								<div class="inner">
+				<div class="wrapper">
+					<div class="inner">
+						<h3 class="major" style="text-transform: none;">Od šuma do tona</h3>
+						<p>Ideja koja stoji iza ovog načina proizvodjenja muzike je sledeća: šum koji bubnjevi proizvode nije samo odsutnost tonova, već zapravo prisutnost mnogih frekvencija odjednom. Naša ideja je da iz obilja frekvencija koje bubnjevi proizvode izdvojimo tonove i prenesemo ih ostalim instrumentima kako bi stvorili celovitu melodijsko-harmonsku strukturu.</p>
 
-									<h3 class="major" style="text-transform: none;">Od šuma do tona</h3>
-									<p>Ideja koja stoji iza ovog načina proizvodjenja muzike je sledeća: šum koji bubnjevi proizvode nije samo odsutnost tonova, već zapravo prisutnost mnogih frekvencija odjednom. Naša ideja je da iz obilja frekvencija koje bubnjevi proizvode izdvojimo tonove i prenesemo ih ostalim instrumentima kako bi stvorili celovitu melodijsko-harmonsku strukturu.</p>
+						<h3 class="major" style="text-transform: none;">Audio-to-MIDI</h3>
+						<p>Za tu namenu koristimo mikrofon koji audio signal prenosi u štimer (tjuner) koji ima MIDI output tj. može informaciju o ustanovljenoj frekvenciji da prosledi dalje MIDI protokolom. Štimer analizira osnovnu frekvenciju zvuka koji dolazi sa bubnjeva, pretvara je u MIDI signal i šalje ga dalje u VST instrumente poput klavira, kontrabasa, saksofona, gitare i sintisajzera koji su instalirani na računaru kao VST plaginovi. Njihov zvuk čujemo uporedo sa akustičnim bubnjevima - kao da slušamo bend uživo.</p>
+						
+						<p><strong>Štimer "greši" i mnogi se tonovi dese slučajno - bubnjar mora da "prati" ostale!</strong></p>
+						
+						<h3 class="major" style="text-transform: none;">U igru se uvodi "slučaj"</h3>
+						<p>U ovako koncipiranom procesu pretvaranja audio signala akustičnih bubnjeva u MIDI signal postoji momenat slučaja, zbog neizvesnosti oko toga šta će štimer uhvatiti od zvuka koji bubnjevi proizvode. To znači da bubnjar ne zna šta će ostali instrumenti odsvirati - mora da sluša, prati i sledi razvoj muzičkog događanja.</p>
 
-									<h3 class="major" style="text-transform: none;">Audio-to-MIDI</h3>
-									<p>Za tu namenu koristimo mikrofon koji audio signal prenosi u štimer (tjuner) koji ima MIDI output tj. može informaciju o ustanovljenoj frekvenciji da prosledi dalje MIDI protokolom. Štimer analizira osnovnu frekvenciju zvuka koji dolazi sa bubnjeva, pretvara je u MIDI signal i šalje ga dalje u VST instrumente poput klavira, kontrabasa, saksofona, gitare i sintisajzera koji su instalirani na računaru kao VST plaginovi. Njihov zvuk čujemo uporedo sa akustičnim bubnjevima - kao da slušamo bend uživo.</p>
-									
-									<p><strong>Štimer "greši" i mnogi se tonovi dese slučajno - bubnjar mora da "prati" ostale!<br />
-									Tonovi koje instrumenti sviraju generisani su bubnjevima ali nisu jednoznačno određeni kao što bi to bio slučaj sa upotrebom trigera, kod kojih udarac na bubnju pokreće tačno određeno dešavanje na virtuelnom instrumentu.</strong></p>
-									
-									<h3 class="major" style="text-transform: none;">U igru se uvodi "slučaj"</h3>
-									<p>U ovako koncipiranom procesu pretvaranja audio signala akustičnih bubnjeva u MIDI signal postoji momenat slučaja, zbog neizvesnosti oko toga šta će štimer uhvatiti od zvuka koji bubnjevi proizvode. (Ovo je posledica gore pomenute neharmoničnosti modusa vibracije bubnjarske membrane).</p>
-									<p>To znači da bubnjar ne zna šta će ostali instrumenti odsvirati - mora da sluša, prati i sledi razvoj muzičkog događanja baš poput situacije improvizovanja sa živim muzičarima.</p>
-									<p>Promena u sviranju bubnjara je detektovana štimerom i odražava se na to šta instrumenti sviraju i tako u krug - napravljena je povratna sprega izmedju bubnjara i virtuelnih instrumenata sa računara.</p>
-
-									<!-- SLIKA SA OPISOM -->
-									<div class="image main" style="margin-top: 3em; margin-bottom: 0;">
-										<img src="images/Kraljevo.jpg" alt="Saša Ranković - Muzički performans" />
-										<span class="custom-caption">U sklopu izložbe naučnih ilustracija „Iza objektivnosti: vizuelne metafore u nauci“, koju je, od 15. maja do 12. juna 2023, Centar za promociju nauke (CPN) organizovao u saradnji sa Narodnim muzejom Kraljevo, Saša Ranković izveo je muzički performans „Bubnjar i muzičari iz mašine“</span>
-									</div>
-
-									<!-- YOUTUBE PLAYLIST EMBED -->
-									<div class="youtube-section">
-										<div class="video-responsive">
-											<iframe src="https://www.youtube.com/embed/videoseries?list=PLlaw_pXGDpD7nv3CVXEK0FemzQZRMJcj8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-										</div>
-									</div>
-
-								</div>
-							</div>
-
-					</section>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major" style="text-transform: none;">Kontakt</h2>
-							<ul class="contact" style="margin: 0 0 2em 0; padding: 0;">
-								<li class="icon solid fa-envelope" style="list-style: none;"><a href="mailto:sasarankovic@gmail.com">sasarankovic@gmail.com</a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Saša Ranković. Sva prava zadržana.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
+						<div class="image main">
+							<img src="images/Kraljevo.jpg" alt="Saša Ranković - Muzički performans" />
+							<span class="custom-caption">U sklopu izložbe naučnih ilustracija „Iza objektivnosti“, Saša Ranković izveo je muzički performans „Bubnjar i muzičari iz mašine“</span>
 						</div>
-					</section>
 
-			</div>
+						<div class="youtube-section">
+							<div class="video-responsive">
+								<iframe src="https://www.youtube.com/embed/videoseries?list=PLlaw_pXGDpD7nv3CVXEK0FemzQZRMJcj8" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<section id="footer">
+				<div class="inner">
+					<h2 class="major" style="text-transform: none;">Kontakt</h2>
+					<ul class="contact" style="margin: 0 0 2em 0; padding: 0;">
+						<li class="icon solid fa-envelope" style="list-style: none;"><a href="mailto:sasarankovic@gmail.com">sasarankovic@gmail.com</a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Saša Ranković. Sva prava zadržana.</li>
+					</ul>
+				</div>
+			</section>
+		</div>
 
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
