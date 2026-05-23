@@ -1,0 +1,48 @@
+<section id="wrapper">
+    <header>
+        <div class="inner">
+            <h2>Diskografija i Galerija</h2>
+            <p>Pregled izdanja i fotografije sa nastupa.</p>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="inner">
+
+            <h3 class="major">Izdanja</h3>
+            <div class="table-wrapper">
+                <table class="alt">
+                    <thead>
+                        <tr>
+                            <th>Naslov</th>
+                            <th>Godina</th>
+                            <th>Format</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Naziv albuma 1</td>
+                            <td>2026</td>
+                            <td>Vinyl / Digital</td>
+                        </tr>
+                        <tr>
+                            <td>Naziv albuma 2</td>
+                            <td>2025</td>
+                            <td>Digital</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="major">Galerija</h3>
+            <div class="box alt">
+                <div class="row gtr-uniform">
+                    <div class="col-4"><span class="image fit"><img src="images/tvoja_slika1.jpg" alt="Opis" /></span></div>
+                    <div class="col-4"><span class="image fit"><img src="images/tvoja_slika2.jpg" alt="Opis" /></span></div>
+                    <div class="col-4"><span class="image fit"><img src="images/tvoja_slika3.jpg" alt="Opis" /></span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
