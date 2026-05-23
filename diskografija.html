@@ -1,11 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Diskografija i Galerija</title>
+		<title>Diskografija | Monoritam</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1em; }
+			.video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -24,7 +28,7 @@
 					<ul class="links">
 						<li><a href="index.html">Početna</a></li>
 						<li><a href="studio.html">Studio</a></li>
-						<li><a href="diskografija.html">Diskografija i Galerija</a></li>
+						<li><a href="diskografija.html">Diskografija</a></li>
 					</ul>
 					<a href="#" class="close">Zatvori</a>
 				</div>
@@ -33,33 +37,46 @@
 			<section id="wrapper">
 				<header>
 					<div class="inner">
-						<h2>Diskografija i Galerija</h2>
+						<h2>Diskografija i video radovi</h2>
 					</div>
 				</header>
 
 				<div class="wrapper">
 					<div class="inner">
-						<h3 class="major">Izdanja</h3>
-						<div class="table-wrapper">
-							<table class="alt">
-								<thead>
-									<tr><th>Naslov</th><th>Godina</th><th>Format</th></tr>
-								</thead>
-								<tbody>
-									<tr><td>Album 1</td><td>2026</td><td>Vinyl / Digital</td></tr>
-									<tr><td>Album 2</td><td>2025</td><td>Digital</td></tr>
-								</tbody>
-							</table>
-						</div>
+						
+						<!-- Grid sekcija za videe -->
+						<section class="features">
+							
+							<!-- Video 1 -->
+							<article>
+								<div class="video-container">
+									<iframe src="https://www.youtube.com/embed/TVOJ_VIDEO_ID_1" allowfullscreen></iframe>
+								</div>
+								<h3 class="major">Naslov Albuma/Videa 1</h3>
+								<p>Kratak opis izdanja ili projekta.</p>
+							</article>
 
-						<h3 class="major">Galerija</h3>
-						<div class="box alt">
-							<div class="row gtr-uniform">
-								<div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic07.jpg" alt="" /></span></div>
-							</div>
-						</div>
+							<!-- Video 2 -->
+							<article>
+								<div class="video-container">
+									<iframe src="https://www.youtube.com/embed/TVOJ_VIDEO_ID_2" allowfullscreen></iframe>
+								</div>
+								<h3 class="major">Naslov Albuma/Videa 2</h3>
+								<p>Kratak opis izdanja ili projekta.</p>
+							</article>
+
+							<!-- Video 3 (Samo otkomentariši ako trebaš više)
+							<article>
+								<div class="video-container">
+									<iframe src="https://www.youtube.com/embed/TVOJ_VIDEO_ID_3" allowfullscreen></iframe>
+								</div>
+								<h3 class="major">Naslov Albuma/Videa 3</h3>
+								<p>Kratak opis izdanja ili projekta.</p>
+							</article>
+							-->
+
+						</section>
+
 					</div>
 				</div>
 			</section>
