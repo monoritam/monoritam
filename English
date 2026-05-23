@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Muzičari iz mašine - Saša Ranković</title>
+		<title>THE CONCEPT THAT INNOVATIVELY COMBINES ACOUSTIC DRUMS AND VIRTUAL INSTRUMENTS</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -81,7 +81,7 @@
 								<li><a href="muzicari-iz-masine.html">Muzičari iz mašine</a></li>
 								<li><a href="studio.html">Studio</a></li>
 								<li><a href="diskografija.html">Diskografija</a></li>
-					
+					<li><a href="english.html">Diskografija</a></li>
 						</ul>
 							<a href="#" class="close">Zatvori</a>
 						</div>
@@ -92,16 +92,15 @@
 					<div class="inner">
 						<div class="image main">
 							<img src="images/Kraljevo.jpg" alt="Saša Ranković - Muzički performans" />
-							<span class="custom-caption">U sklopu izložbe naučnih ilustracija „Iza objektivnosti: vizuelne metafore u nauci“, koju je, od 15. maja do 12. juna 2023, Centar za promociju nauke (CPN) organizovao u saradnji sa Narodnim muzejem u Kraljevu, Saša Ranković izveo je muzički performans „Bubnjar i muzičari iz mašine“</span>
+							<span class="custom-caption">Saša Ranković performed the musical performance "Drummer and musicians from the machine" as part of the exhibition of scientific illustrations "Behind objectivity: visual metaphors in science", which, from May 15 until June 12, 2023, the Center for the Promotion of Science (CPN) organized in cooperation with the Kraljevo National Museum</span>
 						</div>
 
-						<p><strong>Zašto bubnjevi ne sviraju "tonove"?</strong></p>
-						<p>Bubnjarska koža je cirkularna membrana. Nasuprot vibriranju žice ili vazdušnog stuba, koja su jednodimenzionalna, vibracija kružne membrane je dvodimenzionalna i mnogi modusi vibracije se pojavljuju istovremeno. Ovi obrasci vibriranja membrane potiskuju molekule vazduha stvarajući tako zvučne frekvencije koje čujemo.</p>
-						<p>Ono što je specifično za zvučne membrane jeste to da ovi modusi nisu harmonični, što znači da frekvencije viših modusa nisu umnošci (proizvod osnovne frekvencije i celog broja) osnovne frekvencije kao što je slučaj kod harmonske serije. To znači da tonsku visinu bubnjeva nije lako odrediti, pa se bubnjevi koriste za ritam, a ne za gradnju melodija i harmonija. U našem slučaju, upravo ova čudna igra harmonika igraće ulogu u generisanju tonova za virtuelne instrumente.</p>
+						<p><strong>WHY DON'T DRUMS PLAY "NOTES"?</strong></p>
+						<p>The drumhead is a circular membrane. The vibration of a circular membrane is two-dimensional, and many vibration modes occur simultaneously. These patterns of membrane vibration push air molecules, creating the sound frequencies that we hear. What is specific to sound membranes is that these modes are not harmonic, meaning that the frequencies of higher modes are not multiples (products of the fundamental frequency and whole numbers) of the fundamental frequency, as is the case with a harmonic series. Due to this peculiar harmonic interplay, it is not easy to determine the pitch of drums, and a drum strike is more noise than tone. That's why we don't use drums to build melodies and harmonies in music, but for rhythm.</p>
 						
 						<div class="bandcamp-section">
 							<iframe style="border: 0; width: 280px; height: 373px;" src="https://bandcamp.com/EmbeddedPlayer/album=1785476707/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/" seamless><a href="https://sasarankovic.bandcamp.com/album/monoritam-drum-out">MONORITAM - Drum Out by Saša Ranković</a></iframe>
-							<span class="custom-caption">Ovo su audio snimci ovako nastalih komada. Sve je snimljeno uživo - bez nasnimavanja, matrica, lupova, semplova i sl.</span>
+							<span class="custom-caption">These are audio recordings of pieces created in this way. Everything was recorded live - without overdubs, backing tracks, loops, samples, etc</span>
 						</div>
 					</div>
 				</header>
